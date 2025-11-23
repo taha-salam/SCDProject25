@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "6921b3ed24bc9755bc909651",
+    "title": "Gmail",
+    "username": "myuser",
+    "password": "pass123",
+    "category": "email",
+    "createdAt": "2025-11-22T13:00:29.734Z",
+    "updatedAt": "2025-11-22T13:00:29.734Z",
+    "__v": 0
+  }
+]

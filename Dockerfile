@@ -1,20 +1,20 @@
-# Use official Node.js LTS image
 FROM node:18-alpine
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+# Copy backend package.json first
+COPY backend/package*.json ./
 
-# Install dependencies
+# Install backend dependencies
 RUN npm install
 
-# Copy rest of the app
-COPY . .
+# Copy the rest of the backend code
+COPY backend/ .
 
-# Expose the backend port
+# Expose backend port
 EXPOSE 3000
 
-# Start the backend server
+# Start backend (YOUR ENTRY FILE IS index.js)
 CMD ["node", "index.js"]
+
